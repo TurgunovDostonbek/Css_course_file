@@ -3,3 +3,9 @@ Height and Width,
 Max and Min Width,
 Max and Min height.
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
