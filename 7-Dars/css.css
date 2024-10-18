@@ -4,3 +4,9 @@ Inline and Inline-Block,
 Text align and Vertical align,
 Float,
 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
