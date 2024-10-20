@@ -1,0 +1,9 @@
+/* 
+Backround-image, Backround-repeat, Backround-size, Backround-position. Rgb and Regex ranglar.
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
