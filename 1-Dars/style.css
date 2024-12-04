@@ -6,3 +6,24 @@
     Comments?
     Github?
 */
+
+/* p {
+    color: red;
+}
+
+div {
+    color: black;
+}
+
+.card {
+    border: 1px solid red;
+} */
+
+p {
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 5px;
+    text-align: left;
+}
