@@ -4,3 +4,62 @@ Cascadlash,
 Inheritance(meros olish),
 Figma, Netlify,
 */
+
+
+/* class selector */
+/* .card {
+  color: red;
+} */
+
+/* Id selector */
+/* #card {
+  color: black;
+} */
+
+/* Tag selector */
+/* h1 {
+  color: green;
+} */
+
+/* Universal selector */
+/* * {
+  background-color: blue;
+} */
+
+/* .card p {
+  color: red;
+} */
+
+/* .card>p {
+  color: red;
+} */
+
+.ota {
+  width: 100%;
+  height: 500px;
+  border: 5px solid red;
+  display: flex;
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.farzand {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: brown;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
