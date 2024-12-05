@@ -9,3 +9,54 @@ Max and Min height.
   padding: 0;
   box-sizing: border-box;
 }
+
+/* body {
+  display: flex;
+  gap: 50px;
+} */
+
+/* .card1 p {
+  display: inline;
+  height: 500px;
+  background-color: blueviolet;
+}
+
+.card2 {
+  height: 500px;
+  background: red;
+}
+
+.card2 span {
+  display: block;
+  background-color: rgb(16, 186, 44);
+} */
+
+body {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_info_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
