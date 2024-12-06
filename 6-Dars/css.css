@@ -1,3 +1,43 @@
 /* 
 Block and Inline Elements?
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 360px;
+  height: 366px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #D8D8D8;
+}
+
+.card_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
