@@ -1,75 +1,120 @@
 /* 
-Box modeli,
-Padding,
-Margin,
-Border,
-Qisqartmalar.
+Combinators,
+Css Colors,
+O'lchov birliklar,
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*//////////////////////////////////////// Combinators  //////////////////////////////////////////////*/
+/*
+Descendant Selector
+*/
+div p {
+  color: red;
 }
 
-/* .cards {
-  width: 1000px;
-  height: 500px;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 20px;
+/* Child Selector
+*/
+div>p {
+  color: blue;
 }
 
-.card {
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-} */
-
-/* .cards {
-  display: flex;
-  width: 1200px;
-  border: 1px solid red;
+/* Adjacent Sibling Selector
+*/
+div+p {
+  color: green;
 }
 
-.card {
-  border: 5px solid black;
-  width: 400px;
+/* General Sibling Selector
+*/
+div~p {
+  color: yellow;
 }
 
-1200
+/*//////////////////////////////////////// Css Colors  //////////////////////////////////////////////*/
+/*
+Color Names
+*/
+p {
+  color: red;
+}
 
-400+5=405
-400+5=405
-400+5=405 1215
-1200 */
+/* Hexadecimal Colors
+*/
+p {
+  color: #ff0000;
+}
 
+/* RGB Colors
+*/
+p {
+  color: rgb(255, 0, 0);
+}
+
+/* RGBA Colors
+*/
+p {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+/* HSL Colors
+*/
+p {
+  color: hsl(0, 100%, 50%);
+}
+
+/* HSLA Colors
+*/
+p {
+  color: hsla(0, 100%, 50%, 0.5);
+}
+
+/*//////////////////////////////////////// O'lchov birliklar  //////////////////////////////////////////////*/
+
+/* 
+  Absolute birliklar
+  - px (pixels)
+  - cm (centimeters)
+  - mm (millimeters)
+  - in (inches)
+  - pt (points)
+  - pc (picas)
+*/
+
+p {
+  font-size: 16px;
+  /* pixels */
+  margin: 1cm;
+  /* centimeters */
+  padding: 10mm;
+  /* millimeters */
+}
+
+/* 
+  Relative birliklar
+  - em (elementning font-size'iga nisbatan)
+  - rem (root elementning font-size'iga nisbatan)
+  - % (ota-onaning o'lchamiga nisbatan)
+  - vw (viewport kengligi)
+  - vh (viewport balandligi)
+*/
 h1 {
-  /* margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  margin-right: 20px; */
-  /* margin: 10px 20px 30px 40px; */
-  /* border-style: solid;
-  border-color: red;
-  border-width: 5px; */
-  /* border: 1px solid red; */
+  font-size: 2em;
+  /* elementning font-size'iga nisbatan */
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 175px;
-  height: 137px;
-  border-radius: 6px;
-  border: 1px solid black;
-  color: #42454A;
+h2 {
+  font-size: 1.5rem;
+  /* root elementning font-size'iga nisbatan */
+}
+
+p {
+  width: 50%;
+  /* ota-onaning o'lchamiga nisbatan */
+}
+
+div {
+  width: 100vw;
+  /* viewport kengligining 100% */
+  height: 100vh;
+  /* viewport balandligining 100% */
 }
