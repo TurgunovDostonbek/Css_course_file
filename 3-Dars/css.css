@@ -1,6 +1,110 @@
 /* 
+Shorthands Qisqartmalar,
 HTML tree,
-Combinators,
 Multi classes,
 !Important,
+*/
+
+/* /////////////////////////////////// Shorthands Qisqartmalar ///////////////////////////////////////////////*/
+
+/*
+Shorthands qisqartmalar CSS da qisqa yozish usuli.
+*/
+/*
+Shorthands qisqartmalarni ishlatish orqali kodni qisqartirish va o'qilishi osonroq bo'ladi.
+Masalan, quyidagi kodni ko'rib chiqing:
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+}
+
+/*
+Bu kodni qisqartirish uchun quyidagi shorthands qisqartmalarni ishlatish mumkin:
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  font: 16px Arial, sans-serif;
+  border: 2px solid #000;
+}
+
+/*
+yuqqoridagi kodda border qisqartmalar ishlatilgan.
+Bu yerda `background-color` va `font-family` qisqartirilgan.
+Shorthands qisqartmalarni ishlatish orqali kodni qisqartirish va o'qilishi osonroq bo'ladi.
+*/
+
+/* /////////////////////////////////// HTML tree ///////////////////////////////////////////////*/
+
+/*
+HTML tree - bu HTML elementlarining tuzilishi va ularning o'zaro bog'lanishini ifodalaydi.
+HTML tree yordamida HTML hujjatining tuzilishini tushunish va elementlar o'rtasidagi munosabatlarni aniqlash mumkin.
+*/
+/* HTML tree quyidagi tarzda ko'rinishi mumkin:
+*/
+/* <!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Tree Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to HTML Tree</h1>
+      <p>This is an example of HTML tree structure.</p>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </body>
+</html> */
+
+/* //////////////////////////////////////// Multi classes ///////////////////////////////////////////////*/
+
+/*
+Multi classes - bu bir HTML elementiga bir nechta klasslarni bir vaqtning o'zida qo'shish imkonini beradi.
+Bu usul yordamida elementlarga bir nechta uslublarni qo'llash va ularni bir joyda boshqarish osonlashadi.
+Masalan, quyidagi kodni ko'rib chiqing:
+*/
+
+/* <div class="box red large">
+  <h2>Multi Classes Example</h2>
+  <p>This box has multiple classes applied.</p>
+</div> */
+
+/*
+Yuqoridagi kodda `box`, `red` va `large` klasslari bir vaqtning o'zida qo'llanilgan.
+Bu klasslar yordamida elementning ko'rinishi va o'lchamini o'zgartirish mumkin.
+Multi classes yordamida HTML elementlarini yanada moslashuvchan va qulay boshqarish mumkin.
+*/
+
+/* //////////////////////////////////////// !Important ///////////////////////////////////////////////*/
+/*
+!Important - bu CSS qoidalarini ustun qo'yish uchun ishlatiladigan maxsus kalit so'z.
+Bu usul yordamida biror qoidani boshqa qoidalardan ustun qo'y ish va uning ustuvorligini ta'minlash mumkin.
+Masalan, quyidagi kodni ko'rib chiqing:
+*/
+/*
+.box {
+  background-color: blue !important;
+  color: white;
+}
+
+.box.special {
+  background-color: red;
+}
+*/
+
+/*Yuqoridagi kodda `.box` klassi uchun `background-color` qoidasi `!important` bilan belgilangan.
+Bu shuni anglatadiki, `.box.special`  klassiga qo'llanilgan `background-color: red;` qoidasi ustun kelmaydi.
+Shunday qilib, `.box` klassi uchun `background-color` har doim ko'k rang bo'ladi.
+!Important yordamida CSS qoidalarini ustun qo'yish va ularni boshqar ish osonlashadi.
 */
