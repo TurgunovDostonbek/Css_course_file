@@ -1,65 +1,154 @@
 /* 
+CSS Selectorlar,
 Specificity(o'ziga xoslik),
 Cascadlash,
 Inheritance(meros olish),
-Figma, Netlify,
 */
 
-
-/* class selector */
-/* .card {
-  color: red;
-} */
-
-/* Id selector */
-/* #card {
-  color: black;
-} */
-
-/* Tag selector */
-/* h1 {
-  color: green;
-} */
+/* ///////////////////////////////////// CSS Selectorlarining turlari /////////////////////////////////// */
 
 /* Universal selector */
-/* * {
-  background-color: blue;
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* .card p {
+/* Type selector */
+h1 {
+  font-size: 24px;
+}
+
+/* Class selector */
+.card {
   color: red;
-} */
+}
 
-/* .card>p {
+/* ID selector */
+#header {
+  background-color: lightblue;
+}
+
+/* Attribute selector */
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+/* Descendant selector */
+ul li {
+  list-style-type: none;
+}
+
+/* Child selector */
+ul>li {
+  font-weight: bold;
+}
+
+/* Adjacent sibling selector */
+h1+p {
+  margin-top: 10px;
+}
+
+/* General sibling selector */
+h1~p {
+  color: gray;
+}
+
+/* Grouping selector */
+h1,
+h2,
+h3 {
+  font-family: Arial, sans-serif;
+}
+
+/* Pseudo-class selector */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pseudo-element selector */
+p::first-letter {
+  font-size: 2em;
+  color: blue;
+}
+
+/* Media query */
+@media (max-width: 600px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*////////////////////////////////////////// Specificity (oziga xosslik) ///////////////////////////////////////   */
+/* O'ziga xosslik */
+/* CSS qoidalarining ustunligini belgilaydi. */
+/* O'ziga xosslikni hisoblashda quyidagi tartib amal qiladi: */
+/* 1. Inline styles (eng yuqori) */
+/* 2. ID selectors */
+/* 3. Class selectors */
+/* 4. Type selectors */
+/* 5. Universal selectors (eng past) */
+/* Agar bir xil elementga bir nechta qoidalar ta'sir etsa, */
+/* o'ziga xosslikka ko'ra eng yuqori ustunlikka ega qoida qo'llaniladi. */
+/* Misol: */
+.card {
   color: red;
-} */
-
-.ota {
-  width: 100%;
-  height: 500px;
-  border: 5px solid red;
-  display: flex;
-  /* justify-content: space-around; */
-  /* justify-content: space-between; */
-  justify-content: space-evenly;
-  align-items: center;
 }
 
-.farzand {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: brown;
+#header .card {
+  color: blue;
 }
 
-.red {
-  background-color: red;
+/* Bu yerda #header .card qoidasining o'ziga xossligi yuqori, */
+/* shuning uchun u qo'llaniladi va matn rangi ko'k bo'ladi. */
+
+/*////////////////////////////////////////// Cascading (kaskadlash) ///////////////////////////////////////   */
+/* Kaskadlash */
+/* CSS qoidalari bir-biriga ta'sir ko'rsatishi mumkin. */
+/* Kaskadlash - bu qoidalar o'rtasidagi ustunlikni belgilaydi. */
+/* Agar bir xil elementga bir nechta qoidalar ta'sir etsa, */
+/* oxirgi qoida ustunlikka ega bo'ladi. */
+/* Misol: */
+.card {
+  color: red;
 }
 
-.blue {
-  background-color: blue;
+#header .card {
+  color: blue;
 }
 
-.green {
-  background-color: green;
+/* Bu yerda #header .card qoidasining o'ziga xossligi yuqori, */
+/* shuning uchun u qo'llaniladi va matn rangi ko'k bo'ladi. */
+
+/*////////////////////////////////////////// Inheritance (meros olish) ///////////////////////////////////////   */
+/* Meros olish */
+/* CSS xususiyatlari farzand elementlarga meros qilib o'tishi mumkin. */
+/* Misol: */
+/* body { font-family: Arial, sans-serif; } */
+/* h1, h2, p { color: black; } */
+/* Bu yerda body elementining font-family xususiyati */
+/* h1, h2 va p elementlariga meros qilib o'tadi. */
+/* Shuning uchun, agar h1, h2 yoki p elementlarida font-family */
+/* alohida belgilangan bo'lmasa, ular body elementining */
+/* font-family xususiyatini qabul qiladi. */
+/* Misol: */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+p {
+  color: black;
 }

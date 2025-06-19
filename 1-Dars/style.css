@@ -1,29 +1,42 @@
 /* 
-    Introduction?
-    Css Versiyalari?
-    Css syntax?
-    Selectorlar?
-    Comments?
-    Github?
-*/
+CSS haqida ishlatiladigan asosiy qoidalar:
+1. Selektorlar: HTML elementlarini tanlash uchun ishlatiladi.
+2. Qoidalar: Selektorlar va ularning uslublarini belgilaydi.
+3. Xususiyatlar: HTML elementlarining ko'rinishini belgilaydi.
+4. Qiymatlar: Xususiyatlarga beriladigan qiymatlar.
+5. Kaskad: Bir nechta qoidalar bir xil elementga ta'sir qilganda, oxirgi qoida ustunlikka ega bo'ladi.
+6. Inheritance: Ba'zi xususiyatlar ota elementlardan farzand elementlarga o'tadi.
+7. Box model: HTML elementlari to'rt tomonli chegaralar, ichki boshliqlar va tashqi bo'shliqlardan iborat.
+8. Media queries: Turli qurilmalarda turlicha ko'rinish uchun ishlatiladi.
+9. Flexbox: Elementlarni moslashuvchan joylash uchun ishlatiladi.
+10. Grid: Elementlarni tarmoq shaklida joylashtirish uchun ishlatiladi.
+11. Pseudo-class: Elementning holatini belgilash uchun ishlatiladi, masalan, :hover, :active.
+12. Pseudo-element: Elementning qismiga uslub qo'llash uchun ishlatiladi, masalan, ::before, ::after.
+13. Transition: Elementning xususiyatlaridagi o'zgarishlarni yumshoq o'tkazish uchun ishlatiladi.
+14. Animation: Elementning harakatini belgilash uchun ishlatiladi.
+15. Variables: CSS o'zgaruvchilar yordamida qiymatlarni qayta ishlatish imkonini beradi.
+16. Comments: CSS kodida izohlar qo'shish uchun ishlatiladi,
+/* bu izohlar kodni o'qish va tushunishni osonlashtiradi. 
+CSS izohlar va belgilar orasida yoziladi. 
+CSS izohlar /* bu tarzda yoziladi va ular brauzer tomonidan e'tiborga olinmaydi.
+ */
 
-/* p {
-    color: red;
-}
+/* CSS sintaksisi */
 
-div {
-    color: black;
-}
-
-.card {
-    border: 1px solid red;
+/* Selektor {
+    xususiyat: qiymat;
+    properties: values;
 } */
 
-p {
-    font-family: Ubuntu;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 5px;
-    text-align: left;
+/* Misol */
+h1 {
+    color: blue;
+    /* Matn rangi ko'k */
+    font-size: 24px;
+    /* Matn o'lchami 24px */
+    text-align: center;
+    /* Matn markazga joylashgan */
 }
+
+/* Css Comment yozish bu foydalanuvchining kodini o'qish va tushunishni osonlashtiradi */
+/* Comments */
