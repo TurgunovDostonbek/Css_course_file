@@ -1,62 +1,165 @@
 /* 
-Height and Width,
-Max and Min Width,
-Max and Min height.
+  Box modeli, (margins, paddings, borders)
+  Border radius,
+  Matnga oid codlar,
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* //////////////////////////////// Box modeli /////////////////////// */
+/* Box modelining asosiy tushunchalari:  */
+/* 
+  - Margin: elementlar orasidagi bo'shliq
+  - Padding: element ichidagi bo'shliq
+  - Border: element atrofidagi chiziq
+  - Box-sizing: elementning o'lchamini qanday hisoblash kerakligini belgilaydi
+*/
 
-/* body {
-  display: flex;
-  gap: 50px;
-} */
-
-/* .card1 p {
-  display: inline;
-  height: 500px;
-  background-color: blueviolet;
-}
-
-.card2 {
-  height: 500px;
-  background: red;
-}
-
-.card2 span {
-  display: block;
-  background-color: rgb(16, 186, 44);
-} */
-
+html,
 body {
+  margin: 0;
+  /* HTML va body elementlarining default marginlarini olib tashlaydi */
+  padding: 0;
+  /* HTML va body elementlarining default paddinglarini olib tashlaydi */
+  height: 100%;
+  /* Body elementining balandligini to'liq ekranga tenglashtiradi */
+}
+
+* {
+  box-sizing: border-box;
+  /* Bu xususiyat barcha elementlar uchun box modelini o'zgartiradi */
+}
+
+/* //////////////////////////////// Margin /////////////////////// */
+/* Margin - elementlar orasidagi bo'shliq */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 20px;
+  /* Element atrofida 20px bo'shliq */
+}
+
+/* //////////////////////////////// Padding /////////////////////// */
+/* Padding - element ichidagi bo'shliq */
+.box {
+  padding: 20px;
+  /* Element ichida 20px bo'shliq */
+}
+
+/* //////////////////////////////// Border /////////////////////// */
+/* Border - element atrofidagi chiziq */
+.box {
+  border: 5px solid black;
+  /* Element atrofida 5px qalinlikda qora chiziq */
+}
+
+/* //////////////////////////////// Border Radius /////////////////////// */
+/* Border radius - elementning burchaklarini yumshatish */
+.box {
+  border-radius: 10px;
+  /* Elementning burchaklarini 10px yumshatadi */
+}
+
+/* //////////////////////////////// Matnga oid codlar /////////////////////// */
+/* Matnni markazga joylash */
+.text {
   text-align: center;
+  /* Matnni markazga joylashtiradi */
+  font-size: 20px;
+  /* Matn o'lchamini 20px ga o'rnatadi */
+  color: darkblue;
+  /* Matn rangini to'q ko'kga o'rnatadi */
 }
 
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Matn Codlari */
+.bold-text {
+  font-weight: bold;
+  /* Matnni qalin qiladi */
+  font-size: 24px;
+  /* Matn o'lchamini 24px ga o'rnatadi */
+  color: green;
+  /* Matn rangini yashilga o'zgartiradi */
+  text-decoration: none;
+  /* Matn ostiga chiziq qo'ymaydi */
+  text-transform: uppercase;
+  /* Matnni katta harflar bilan yozadi */
+  letter-spacing: 2px;
+  /* Harflar orasidagi bo'shliqni oshiradi */
+  line-height: 1.5;
+  /* Qator balandligini oshiradi */
+  font-family: Arial, sans-serif;
+  /* Matn shriftini Arial ga o'rnatadi */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  /* Matnga soyali effekt qo'shadi */
+  background-color: #f0f0f0;
+  /* Matn fon rangini ochiq kulrangga o'zgartiradi */
 }
 
-.card2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+/* Matnni kursiv qilish */
+.italic-text {
+  font-style: italic;
+  /* Matnni kursiv qiladi */
 }
 
-.card_info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Matnni ostiga chiziq qo'yish */
+.underline-text {
+  text-decoration: underline;
+  /* Matn ostiga chiziq qo'yadi */
 }
 
-.card_info_info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+/* Matnni yuqoriga ko'tarish */
+.superscript-text {
+  vertical-align: super;
+  /* Matnni yuqoriga ko'taradi */
+  font-size: smaller;
+  /* Matn o'lchamini kichraytiradi */
+}
+
+/* Matnni pastga tushirish */
+.subscript-text {
+  vertical-align: sub;
+  /* Matnni pastga tushiradi */
+  font-size: smaller;
+  /* Matn o'lchamini kichraytiradi */
+}
+
+/* Matnni rangini o'zgartirish */
+.red-text {
+  color: red;
+  /* Matn rangini qizilga o'zgartiradi */
+}
+
+/* Matnni fon rangini o'zgartirish */
+.highlight-text {
+  background-color: yellow;
+  /* Matn fon rangini sariqqa o'zgartiradi */
+}
+
+/* Matnni katta harflar bilan yozish */
+.uppercase-text {
+  text-transform: uppercase;
+  /* Matnni katta harflar bilan yozadi */
+}
+
+/* Matnni kichik harflar bilan yozish */
+.lowercase-text {
+  text-transform: lowercase;
+  /* Matnni kichik harflar bilan yozadi */
+}
+
+/* Matnni birinchi harfini katta qilish */
+.capitalize-text {
+  text-transform: capitalize;
+  /* Matnning har so'zining birinchi harfini katta qiladi */
+}
+
+/* Matnni qatorlarga bo'lish */
+.break-text {
+  word-break: break-all;
+  /* Matnni qatorlarga bo'lish */
+}
+
+/* Matnni qatorlarga bo'lish */
+.break-word-text {
+  word-break: break-word;
+  /* Matnni qatorlarga bo'lish */
 }

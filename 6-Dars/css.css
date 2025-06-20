@@ -1,43 +1,47 @@
 /* 
-Block and Inline Elements?
+  Normalize CSS,
+  Css validation,
+  Code review,
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ////////////////////////// Normalize CSS //////////////////////////// */
+/* 
+Mormalize Css bu brauzerlar o'rtasidagi farqlarni yo'qotish uchun ishlatiladi.
+Bu CSS fayli barcha brauzerlarda bir xil ko'rinishni ta'minlaydi.
+Normalize CSS faylini o'z loyihangizga qo'shish uchun quyidagi kodni HTML faylingizning `<head>` qismiga qo'shing:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+*/
 
-body {
-  text-align: center;
-}
+/* ////////////////////////// Css validation //////////////////////////// */
+/*
+CSS validation - bu CSS kodini tekshirish va xatolarni aniqlash jarayonidir.
+CSS validator yordamida siz CSS kodini tekshirishingiz va xatolarni tuzatishingiz mumkin.
+CSS validatorni ishlatish uchun quyidagi havolani oching:
+https://jigsaw.w3.org/css-validator/
+*/
 
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+/* ////////////////////////// Code review //////////////////////////// */
+/*
+Code review - bu kodni boshqalar tomonidan tekshirish jarayonidir.
+Code review jarayoni quyidagi bosqichlardan iborat:
+1. Kodni o'qish va tushunish
+2. Kodda xatolarni aniqlash
+3. Xatolarni tuzatish uchun takliflar berish
+4. Kodni qayta ko'rib chiqish
+*/
 
-.card_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.card {
-  width: 360px;
-  height: 366px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  border: 1px solid #D8D8D8;
-}
-
-.card_info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
+/* Code review jarayonini amalga oshirish uchun quyidagi qoidalarni amal qiling:
+1. Kodni o'qish va tushunish uchun vaqt ajrating.
+2. Kodda xatolarni aniqlash uchun diqqat bilan o'qing.
+3. Xatolarni tuzatish uchun takliflar berishdan tortinmang.
+4. Kodni qayta ko'rib chiqish jarayonida konstruktiv fikr bildiring.
+5. Kodni qayta ko'rib chiqish jarayonida o'z fikrlaringizni aniq va tushunarli qilib ifoda eting.
+6. Kodni qayta ko'rib chiqish jarayonida boshqalar bilan hamkorlik qiling.
+7. Kodni qayta ko'rib chiqish jarayonida o'z fikrlaringizni hurmat bilan bildiring.
+8. Kodni qayta ko'rib chiqish jarayonida boshqalar bilan fikr almashishdan tortinmang.
+9. Kodni qayta ko'rib chiqish jarayonida o'z fikrlaringizni asoslash uchun misollar keltiring.
+10. Kodni qayta ko'rib chiqish jarayonida boshqalar bilan fikr almashish uchun ochiq bo'ling.
+/* 11. Kodni qayta ko'rib chiqish jarayonida boshqalar bilan fikr almashish uchun ijobiy munosabatda bo'ling.
+12. Kodni qayta ko'rib chiqish jarayonida boshqalar bilan fikr almashish uchun o'z fikrlaringizni aniq va tushunarli qilib ifoda eting.
+13. Kodni qayta ko'rib chiqish jarayonida boshqalar bilan fikr almashish uchun ochiq bo'ling.
+*/
