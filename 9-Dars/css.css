@@ -3,5 +3,70 @@
   Float.
 */
 
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
 
-.
+/* /////////////////////// Display xossalari /////////////////// */
+.display-block {
+  display: block;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.display-inline {
+  display: inline;
+  background-color: lightgreen;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.display-inline-block {
+  display: inline-block;
+  background-color: lightcoral;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.display-none {
+  display: none;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.display-table {
+  display: table;
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.display-inherit {
+  display: inherit;
+  background-color: lightseagreen;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* ///////////////////////// Float /////////////////////// */
+
+.float-left {
+  float: left;
+  width: 45%;
+  background-color: lightyellow;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.float-right {
+  float: right;
+  width: 45%;
+  background-color: lightpink;
+  padding: 10px;
+  margin: 10px 0;
+}
