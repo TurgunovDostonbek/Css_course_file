@@ -1,179 +1,49 @@
 /* 
-Text-decorations, 
-Pseudo class,
-Transition
+  Css Container,
+  Text align,
+  Vertical align.
 */
-/* ............... Fonts................... */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* .................. Kerakli Qismlar.............. */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
+/* ////////////////////////// Css container //////////////////// */
 
 .container {
-  max-width: 1240px;
+  max-width: 1200px;
+  /* Maximum width of the container */
   width: 100%;
-  margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  /* Full width by default */
+  margin: 0 auto;
+  /* Center the container */
+  padding: 0 15px;
+  /* Padding on left and right */
 }
 
-/* ............. Navabar Start......... */
+/*  Text align - textlar uchun ishlatiladi. */
 
-.navbar_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.navbar_container_logo h1 {
-  font-family: Montserrat;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: 0.10000000149011612px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #252B42;
-}
-
-.navbar_container_links {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.navbar_container_links a {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
+.text-align {
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #737373;
-}
-
-.navbar_container_links a:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.navbar_container_button {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.navbar_container_button button {
-  width: 137px;
-  height: 52px;
-  padding: 15px 25px 15px 25px;
-  border-radius: 5px;
-  background-color: white;
-  border: none;
-  color: #96BB7C;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  cursor: pointer;
-}
-
-.navbar_container_button button:hover {
-  background-color: #96BB7C;
-  color: white;
-}
-
-/* ............. Navabar End .......... */
-
-/* ..........Hero Start...... */
-
-.hero_container {
-  background-image: url(./img/hero-8-bg-shape-cover.png);
-  height: 840px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 50px;
-  margin-top: -50px;
-}
-
-.hero_container p {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.10000000149011612px;
+  /* Center the text */
+  text-align: start;
+  /* Align text to the start */
+  text-align: end;
+  /* Align text to the end */
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #96BB7C;
+  /* Align text to the left */
+  text-align: right;
+  /* Align text to the right */
+  text-align: justify;
+  /* Justify the text */
 }
 
-.hero_container h2 {
-  color: #252B42;
-  font-family: Montserrat;
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 80px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+/* Vertical align faqat Inline elementlar uchun ishlatiladi. Block elementlar uchun esa Flexbox ishlatiladi. */
+
+.vertical-align {
+  vertical-align: sub;
+  /* Pastki index  */
+  vertical-align: super;
+  /*Daraja index  */
+  vertical-align: middle;
+  /* Markazga olib keladi */
+  vertical-align: baseline;
+  /* Standart qiymat */
 }
-
-.hero_container span {
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-
-.hero_container_button {
-  display: flex;
-  gap: 10px;
-}
-
-.hero_container_button button {
-  width: 162px;
-  height: 52px;
-  border-radius: 5px;
-  border: 1px solid #96BB7C;
-  padding: 15px 40px;
-  font-family: Montserrat;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 22px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #96BB7C;
-}
-
-.hero_container_button button:hover {
-  background-color: #96BB7C;
-  color: white;
-  cursor: pointer;
-}
-
-
-/* ..........Hero End...... */
