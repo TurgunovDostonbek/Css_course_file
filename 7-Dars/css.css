@@ -1,85 +1,41 @@
 /* 
-Display xossalari,
-Inline and Inline-Block,
-Text align and Vertical align,
-Float,
+  Height and Width,
+  Max-Height and Max-Width,
+  Min-Height and Min-Width
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+/* //////////////////////////////// Height and Width //////////////////////////////// */
+
+/* Balandlik va Kenglik */
+
+/* Balandlik va kenglikni o'rnatish uchun */
+/* height va width xususiyatlaridan foydalanamiz. */
+/* height - balandlik */
+/* width - kenglik */
+div {
+  height: 200px;
+  /* Balandlik */
+  width: 200px;
+  /* Kenglik */
+  background-color: red;
 }
 
-.container {
-  max-width: 1240px;
-  width: 100%;
-  margin: auto;
-  border: 2px solid black;
+/* //////////////////////////// Max-Height and Max-Width //////////////////////////// */
+/* Maksimal Balandlik va Kenglik */
+div {
+  max-height: 300px;
+  /* Maksimal Balandlik */
+  max-width: 300px;
+  /* Maksimal Kenglik */
+  background-color: blue;
 }
 
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-  border: 1px solid red;
-}
-
-/* .navbar_links {
-  display: flex;
-  gap: 25px;
-}
-
-.navbar_links a {
-  color: black;
-} */
-
-/*     psedo class    */
-
-/* .navbar_links a:hover {
-  color: red;
-  border-bottom: 2px solid red;
-  transition: 2s;
-} */
-
-/* .navbar_links a:active {
-  color: red;
-  
-} */
-
-/* .card {
-  margin: 50px;
-  background-color: black;
-  width: 1300px;
-  height: 500px;
-}
-
-.card h1 {
-  color: white;
-} */
-
-/* .card:hover .card_info {
-  /* background-color: rgb(231, 72, 72); */
-/* transform: translateX(1000px);
-  transition: 2s; */
-
-
-/* .card_info {
-  width: 100px;
-  height: 100px;
-  background-color: brown;
-}
-
-.card_info:hover {
-  transform: scale(0.5);
-  transform: rotate(0deg);
-  transition: 5s;
-} */
-
-
-.section h1 {
-  margin-left: 50px;
+/* //////////////////////////// Min-Height and Min-Width //////////////////////////// */
+/* Minimal Balandlik va Kenglik */
+div {
+  min-height: 100px;
+  /* Minimal Balandlik */
+  min-width: 100px;
+  /* Minimal Kenglik */
+  background-color: green;
 }
