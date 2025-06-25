@@ -1,9 +1,72 @@
 /* 
-Backround-image, Backround-repeat, Backround-size, Backround-position. Rgb and Regex ranglar.
+  Z-Index haqida ma'lumot.
+  Overflow haqida ma'lumot.
 */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+
+/* //////////////////// Z-Index ////////////////// */
+/* h1 {
+  position: relative;
+  z-index: 2;
+  background-color: aqua;
+  bottom: -20px;
+}
+
+p {
+  position: relative;
+  z-index: 5;
+  background-color: yellow;
+  opacity: 0.5;
+} */
+
+/* .parent {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  z-index: 100;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+} */
+
+
+/* //////////////////// overflow  ////////////////// */
+.overflow-example {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  overflow: visible;
+  /* Kontent element chegaralaridan chiqib ketishi mumkin */
+  overflow: hidden;
+  /* Kontent element chegaralaridan chiqib ketishi mumkin emas */
+  overflow: scroll;
+  /* Kontent element chegaralaridan chiqib ketishi mumkin emas, lekin skroll paneli ko'rsatiladi */
+  overflow: auto;
+  /* Kontent element chegaralaridan chiqib ketishi mumkin emas, lekin faqat kerak bo'lganda skroll paneli ko'rsatiladi */
+  overflow-x: hidden;
+  /* X o'qida kontent element chegaralaridan chiqib ketishi mumkin emas */
+  overflow-y: scroll;
+  /* Y o'qida kontent element chegaralaridan chiqib ketishi mumkin emas, lekin skroll paneli ko'rsatiladi */
+  overflow-x: auto;
+  /* X o'qida kontent element chegaralaridan chiqib ketishi mumkin emas, lekin faqat kerak bo'lganda skroll paneli ko'rsatiladi */
+  overflow-y: hidden;
+  /* Y o'qida kontent element chegaralaridan chiqib ketishi mumkin emas */
+}
+
+p {
+  /* width: 500px; */
+  background-color: yellow;
 }
