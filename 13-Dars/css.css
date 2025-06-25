@@ -31,9 +31,7 @@ Rasm sahnaning fonida joylashadi va sahnadagi barcha elementlar ustida ko'rinadi
 Bu fon rasmi sahnaning umumiy ko'rinishini yanada jozibador qiladi.
 */
 
-body {
-  background-img: url('./photo'), url('https://picsum.photos/800/600');
-}
+
 
 /* 
   Background img haqida.
