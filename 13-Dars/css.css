@@ -1,9 +1,134 @@
 /* 
-Rounded-img, Circle-img, Opacity, Gradient, Filterlar.
+Background haqida.
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* /////////////////// Backround haqida //////////////////// */
+
+body {
+  background-color: #f0f0f0;
 }
+
+/* 
+Background haqida.
+Body elementining fon rangi #f0f0f0 ga o'rnatilgan.
+Bu rangi ochiq kulrang rangdir.
+Bu fon rangi butun sahnani qamrab oladi va sahnaning umumiy ko'rinishini yengillashtiradi.
+Body elementining fon rangi sahnaning asosiy fonini belgilaydi va sahnadagi barcha elementlar uchun umumiy fon sifatida ishlaydi.
+Bu fon rangi sahnadagi barcha elementlar uchun umumiy fon sifatida ishlaydi.
+*/
+
+
+
+body {
+  background-image: url('https://picsum.photos/800/600');
+}
+
+/* 
+  Background img haqida. 
+Body elementining fon rasmi https://picsum.photos/800/600 manzilidan olingan.
+Bu rasm sahnaning fonida ko'rsatiladi va sahnaning umumiy ko'rinishini o'zgartiradi.
+Rasm sahnaning fonida joylashadi va sahnadagi barcha elementlar ustida ko'rinadi.
+Bu fon rasmi sahnaning umumiy ko'rinishini yanada jozibador qiladi.
+*/
+
+
+
+/* 
+  Background img haqida.
+Body elementining fon rasmi bir nechta rasm manzillaridan olingan.
+*/
+
+body {
+  background-repeat: no-repeat;
+  /* Rasm takrorlanmaydi */
+  background-repeat: repeat;
+  /* Rasm gorizontal va vertikal ravishda takrorlanadi */
+  background-repeat: repeat-x;
+  /* Rasm faqat gorizontal ravishda takrorlanadi */
+  background-repeat: repeat-y;
+  /* Rasm faqat vertikal ravishda takrorlanadi */
+  background-repeat: space;
+  /* Rasm gorizontal va vertikal ravishda joylashadi, bo'shliqlar bilan */
+}
+
+/* 
+  Background repeat haqida.
+Body elementining fon rasmi takrorlanmaydi.
+Bu xususiyat fon rasmning takrorlanishini oldini oladi.
+Bu fon rasm faqat bir marta ko'rsatiladi va sahnaning fonida joylashadi.
+Bu xususiyat sahnaning fon rasmning takrorlanishini oldini oladi va sahnaning umumiy ko'rinishini yaxshilaydi.
+*/
+
+body {
+  background-size: cover;
+  /* Rasmni to'liq elementga moslashtiradi */
+  background-size: contain;
+  /* Rasmni element ichida to'liq ko'rsatadi */
+  background-size: 100px 50px;
+  /* Rasmning kengligi 100px, balandligi 50px */
+  background-size: 50% 50%;
+  /* Rasmning kengligi va balandligi elementning 50% ga teng */
+  background-size: 50%;
+  /* Kenglikni 50% qilib belgilaydi, balandlik avtomatik */
+  background-size: auto;
+  /* Rasmning asl o'lchamini saqlaydi */
+}
+
+/* 
+  Background size haqida.
+Body elementining fon rasmi sahna o'lchamiga mos ravishda o'lchamlari o'zgartiriladi.
+Bu xususiyat fon rasmning o'lchamlarini sahna o'lchamiga moslashtiradi.
+Bu fon rasm sahna o'lchamiga mos ravishda o'lchamlari o'zgartiriladi va sahnaning umumiy ko'rinishini yaxshilaydi.
+*/
+
+body {
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-position: top left;
+  /* Rasmni yuqori chapga joylashtirish */
+  background-position: top center;
+  /* Rasmni yuqori markazga joylashtirish */
+  background-position: top right;
+  /* Rasmni yuqori o'ngga joylashtirish */
+  background-position: 50% 50%;
+  /* Rasmni element markaziga joylashtirish */
+  background-position: 10px 20px;
+  /* Rasmni 10px dan chap va 20px dan yuqoriga joylashtirish */
+  background-position: 25% 75%;
+  /* Rasmni gorizontalda 25%, vertikalda 75% joylashtirish */
+}
+
+/* 
+Background position haqida.
+Body elementining fon rasmi markazda joylashadi.
+Bu xususiyat fon rasmning joylashuvini belgilaydi.
+Bu fon rasm sahna markazida joylashadi va sahnaning umumiy ko'rinishini yaxshilaydi.
+*/
+
+body {
+  background-attachment: fixed;
+}
+
+/* 
+  Background attachment haqida.
+Body elementining fon rasmi sahnaga bog'langan.
+Bu xususiyat fon rasmning sahnaga bog'lanishini belgilaydi.
+Bu fon rasm sahnaga bog'langan va sahnaning umumiy ko'rinishini yaxshilaydi.*/
+
+body {
+  background-clip: border-box;
+  /* Fon rasm elementning chegarasiga qadar ko'rsatiladi */
+  background-clip: padding-box;
+  /* Fon rasm elementning ichki chegarasiga qadar ko'rsatiladi */
+  background-clip: content-box;
+  /* Fon rasm elementning ichki tarkibiga qadar ko'rsatiladi */
+  border: 1px solid red;
+}
+
+/* 
+  Background clip haqida.
+Body elementining fon rasm elementning chegarasiga qadar ko'rsatiladi.
+Bu xususiyat fon rasmning ko'rinish chegarasini belgilaydi.
+Bu fon rasm elementning chegarasiga qadar ko'rsatiladi va sahnaning umumiy ko'rinishini yaxshilaydi.
+*/
