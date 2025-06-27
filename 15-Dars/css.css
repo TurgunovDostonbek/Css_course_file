@@ -1,9 +1,54 @@
 /* 
-Formalarga style berish strukturasi, Radio and checkbox. Form yaratish.
+  Gradients,
+  Filterlar
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* //////////////// Gradient ////////////////////////////// */
+/* Gradient bu ranglar o'rtasidagi o'tishdir. */
+
+body {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  /*"to right" parametri gradientning gorizontal yo'nalishda bo'lishini bildiradi. */
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  /* "to bottom" parametri gradientning vertikal yo'nalishda bo'lishini bildiradi. */
+  background: linear-gradient(to top, #ff7e5f, #feb47b);
+  /* "to top" parametri gradientning yuqoridan pastga yo'nalishda bo'lishini bildiradi. */
+  background: linear-gradient(to left, #ff7e5f, #feb47b);
+  /* "to left" parametri gradientning chapdan o'ngga yo'nalishda bo'lishini bildiradi. */
+}
+
+/* Radiant gradientlar */
+
+body {
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+  /* "circle" parametri gradientning doira shaklida bo'lishini bildiradi. */
+  background: radial-gradient(ellipse, #ff7e5f, #feb47b);
+  /* "ellipse" parametri gradientning ellips shaklida bo'lishini bildiradi. */
+}
+
+/* //////////////// Filter ////////////////////////////// */
+/* Filterlar tasvirga turli effektlar qo'shish uchun ishlatiladi. */
+img {
+  width: 300px;
+  height: 200px;
+  filter: grayscale(100%);
+  /* Tasvirni kulrang rangga aylantiradi. */
+  filter: blur(5px);
+  /* Tasvirni 5px ga noaniq qiladi. */
+  filter: brightness(0.5);
+  /* Tasvirning yorqinligini 50% ga kamaytiradi. */
+  filter: contrast(200%);
+  /* Tasvirning kontrastini 200% ga oshiradi. */
+  filter: drop-shadow(10px 10px 5px red);
+  /* Tasvirga qizil rangli soya qo'shadi. */
+  filter: hue-rotate(90deg);
+  /* Tasvirning rang tonini 90 daraja aylantiradi. */
+  filter: invert(100%);
+  /* Tasvirning ranglarini teskari qiladi. */
+  filter: opacity(50%);
+  /* Tasvirning shaffofligini 50% ga kamaytiradi. */
+  filter: saturate(200%);
+  /* Tasvirning rang to'yinganligini 200% ga oshiradi. */
+  filter: sepia(100%);
+  /* Tasvirni sepia effektiga aylantiradi. */
 }
