@@ -8,8 +8,68 @@
   <link rel="stylesheet" href="./css.css">
 </head>
 
-<body>
+<>
+  <!-- Gradientlar -->
+  <h1>Gradientlar</h1>
+  <p>Gradientlar bu ranglar o'rtasidagi o'tishdir.</p>
+  <p>Gradientlar CSS orqali yaratiladi va ular fon ranglarini yanada jozibador qiladi.</p>
+  <p>Gradientlar ikki yoki undan ortiq ranglarni birlashtirib, ularni silliq o'tish bilan ko'rsatadi.</p>
 
-</body>
+  <!-- Linear Gradient -->
+  <h2>Linear Gradient</h2>
+  <p>Linear gradient - bu ranglarning gorizontal yoki vertikal yo'nalishda o'tishi.</p>
+  <p>Masalan, quyidagi kodda gorizontal gradient yaratilgan:</p <pre>
+  <code>background: linear-gradient(to right, red, yellow);</code></pre>
+  <p>Bu kodda "to right" parametri gradientning gorizontal yo'nalishda bo'lishini bildiradi.</p>
+  <p>Gradientning yo'nalishini o'zgartirish uchun "to left", "to top", yoki "to bottom" kabi qiymatlarni ishlatish
+    mumkin.</p>
+  <p>Misol uchun:</p>
+  <pre>
+  <code>background: linear-gradient(to bottom, blue, green);</code></pre>
+  <p>Bu kodda gradient vertikal yo'nalishda ko'rsatiladi.</p>
+  <p>Gradientning ranglarini o'zgartirish uchun, rang nomlari yoki rang kodlarini ishlatish mumkin.</p>
+
+  <!-- Radial Gradient -->
+  <h2>Radial Gradient</h2>
+  <p>Radial gradient - bu ranglarning doira yoki ellips shaklida o'tishi.</p>
+  <p>Masalan, quyidagi kodda doira shaklida gradient yaratilgan:</p>
+  <pre>
+  <code>background: radial-gradient(circle, red, yellow);</code></pre>
+  <p>Bu kodda "circle" parametri gradientning doira shaklida bo'lishini bildiradi.</p>
+  <p>Gradientning shaklini o'zgartirish uchun "ellipse" parametrini ishlatish mumkin.</p>
+  <pre>
+  <code>background: radial-gradient(ellipse, blue, green);</code></pre>
+  <p>Bu kodda gradient ellips shaklida ko'rsatiladi.</p>
+  <p>Radial gradientning markazini va tarqalishini o'zgartirish uchun quyidagi parametrlarni ishlatish mumkin:</p>
+  <pre>
+  <code>background: radial-gradient(circle at 50% 50%, red, yellow);</code></pre>
+  <p>Bu kodda gradientning markazi 50% 50% koordinatalarida joylashgan.</p>
+
+  <!-- Gradientning ranglari -->
+  <h2>Gradientning ranglari</h2>
+  <p>Gradientlarda bir nechta ranglarni ishlatish mumkin.</p>
+  <code>Masalan, quyidagi kodda uchta rang ishlatilgan:</p <pre>
+  <code>background: linear-gradient(to right, red, yellow, green);</code></pre>
+  <p>Bu kodda "red", "yellow", va "green" ranglari gorizontal yo'nalishda silliq o'tish bilan ko'rsatiladi.</p>
+  <p>Gradientlarda ranglarning o'zaro o'tish nuqtalarini ham belgilash mumkin.</p>
+  <pre>
+  <code>background: linear-gradient(to right, red, yellow, green);</code></pre>
+  <p>Bu kodda "red" va "yellow" ranglari o'rtasida o'tish nuqtasi mavjud.</p>
+  <p>Gradientlarda ranglarning o'zaro o'tish nuqtalarini belgilash uchun quyidagi sintaksis ishlatiladi:</p>
+  <pre>
+  <code>background: linear-gradient(to right, red 0%, yellow 50%, green 100%);</code></pre>
+  <p>Bu kodda "red" rang 0% nuqtada, "yellow" rang 50% nuqtada, va "green" rang 100% nuqtada joylashgan.</p>
+  <p>Gradientlarda ranglarning o'zaro o'tish nuqtalarini belgilash orqali, gradientning ko'rinishini yanada nazorat
+    qilish
+    mumkin.</p>
+  <p>Gradientlar CSS orqali yaratiladi va ularni fon ranglarini yanada jozibador qilish uchun ishlatish mumkin.</p>
+  <p>Gradientlar yordamida veb-sahifalarga rang-baranglik va jozibadorlik qo'shish mumkin.</p>
+
+  <!-- Filterlar -->
+  <h1>Filterlar</h1>
+  <p>Filterlar - bu tasvirlarga qo'llaniladigan effektlardir.</p>
+  <p>Ular tasvirlarni o'zgartirish, ranglarni o'zgartirish, yoki tasvirlarga turli effektlar qo'shish uchun
+    ishlatiladi.</p>
+  </body>
 
 </html>
