@@ -1,9 +1,94 @@
 /* 
-Responsive, Media query,
+Pseudo class,
+Pseudo element,
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+/* /////////////// Pseudo class ////////////// */
+
+/* hover bu - mishka element ustiga keltirilganda qo'llaniladigan uslub */
+h1:hover {
+  color: red;
+}
+
+/* h1 hover bo'lganda qizil rangga o'zgaradi */
+
+/* active bu - element bosilganda qo'llaniladigan uslub */
+h1:active {
+  color: blue;
+}
+
+/* h1 active bo'lganda ko'k rangga o'zgaradi */
+
+/* focus bu - elementga e'tibor qaratilganda qo'llaniladigan uslub */
+h1:focus {
+  color: green;
+}
+
+/* h1 focus bo'lganda yashil rangga o'zgaradi */
+
+/* visited bu - element oldin ko'rilganida qo'llaniladigan uslub */
+h1:visited {
+  color: purple;
+}
+
+/* h1 visited bo'lganda binafsha rangga o'zgaradi */
+
+/* first-child bu - elementning birinchi farzandi bo'lsa qo'llaniladigan uslub */
+h1:first-child {
+  color: orange;
+}
+
+/* h1 birinchi farzand bo'lsa, sariq rangga o'zgaradi */
+
+/* last-child bu - elementning oxirgi farzandi bo'lsa qo'llaniladigan uslub */
+h1:last-child {
+  color: pink;
+}
+
+/* h1 oxirgi farzand bo'lsa, pushti rangga o'zgaradi */
+
+/* nth-child bu - elementning ma'lum bir farzandi bo'lsa qo'llaniladigan uslub */
+h1:nth-child(2) {
+  color: cyan;
+}
+
+/* h1 ikkinchi farzand bo'lsa, cyan rangga o'zgaradi */
+
+/* //////////////// Pseudo element //////////////// */
+
+/* ::before bu - elementdan oldin qo'shimcha kontent qo'shish uchun ishlatiladi */
+h1::before {
+  content: "Before - ";
+  color: gray;
+}
+
+/* ::after bu - elementdan keyin qo'shimcha kontent qo'shish uchun ishlatiladi */
+h1::after {
+  content: " - After";
+  color: blue;
+}
+
+/* ::first-letter bu - elementning birinchi harfini uslub bilan o'zgartirish uchun ishlatiladi */
+h1::first-letter {
+  font-size: 2em;
+  color: red;
+}
+
+/* ::first-line bu - elementning birinchi qatorini uslub bilan o'zgartirish uchun ishlatiladi */
+h1::first-line {
+  font-weight: bold;
+  color: green;
+}
+
+/* ::selection bu - foydalanuvchi tanlagan matnni uslub bilan o'zgartirish uchun ishlatiladi */
+h1::selection {
+  background-color: yellow;
+  color: black;
+}
+
+/* ::placeholder bu - input elementidagi joy tutuvchi matnni uslub bilan o'zgartirish uchun ishlatiladi */
+input::placeholder {
+  color: gray;
+  font-style: italic;
 }
