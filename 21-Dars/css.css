@@ -1,10 +1,36 @@
 /* 
-Transform xossalari, 3D Transform and 2D Transform,
-transition, 
+  Animation,
+  @keyframes
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@keyframes example {
+  0% {
+    background-color: red;
+    transform: translatex(0);
+  }
+
+  100% {
+    background-color: yellow;
+    transform: translatex(500px);
+  }
+}
+
+.animated-box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  animation-name: example;
+  /* Animation nomi */
+  animation-duration: 4s;
+  /* Animation davomiyligi */
+  animation-iteration-count: infinite;
+  /* Animation takrorlanish soni */
+  animation-direction: alternate;
+  /* Animation yo'nalishi */
+  animation-timing-function: ease-in-out;
+  /* Animation tezligi */
+  animation-fill-mode: forwards;
+  /* Animation tugagandan keyin oxirgi holatni saqlash */
+  animation-delay: 2s;
+  /* Animation kechikishi */
 }

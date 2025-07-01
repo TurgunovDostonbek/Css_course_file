@@ -1,9 +1,20 @@
 /* 
-Fontlar bilan ishlash, google fonts,
+  Responsive,
+  Media Queries,
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
+
+/* Izox  @media bu - bu CSS qoidalari to'plami bo'lib, u veb-sahifaning ko'rinishini foydalanuvchining qurilmasiga mos ravishda o'zgartirish imkonini beradi. 
+    Media queries yordamida siz sahifani turli ekran o'lchamlari, qurilma turlari va yo'nalishlariga moslashtirishingiz mumkin. 
+    Masalan, yuqoridagi kodda agar foydalanuvchi qurilmasi 600 piksel yoki undan kichik bo'lsa, sahifaning fon rangi ochiq ko'k rangga o'zgaradi.
+    Bu foydalanuvchi tajribasini yaxshilash va turli qurilmalarda sahifaning to'g'ri ko'rinishini ta'minlash uchun muhimdir.
+*/
+
+
+/* Media query bu - bu CSS qoidalari to'plami bo'lib, u veb-sahifaning ko'rinishini foydalanuvchining qurilmasiga mos ravishda o'zgartirish imkonini beradi.   */
