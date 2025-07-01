@@ -1,9 +1,34 @@
 /* 
-Animations, Kefrems.
+Css Grid.
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.container {
+  display: grid;
+  /* Css Grid */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* 4 ustun */
+  grid-template-rows: 2fr 1fr 3fr;
+  /* 4 qator */
+  grid-gap: 10px;
+  /* Ustunlar va qatorlar orasidagi bo'shliq */
+  /* justify-items: center; */
+  /* Elementlarni gorizontal ravishda markazga joylashtirish */
+  /* align-items: center; */
+  /* Elementlarni vertikal ravishda markazga joylashtirish */
+  /* justify-content: center; */
+  /* Butun gridni gorizontal ravishda markazga joylashtirish */
+  align-content: center;
+  /* Butun gridni vertikal ravishda markazga joylashtirish */
+  height: 500px;
+  /* Gridning balandligi */
+
+  /* Gridning kengligi */
+
+}
+
+.item {
+  background-color: rgb(18, 156, 202);
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
 }
