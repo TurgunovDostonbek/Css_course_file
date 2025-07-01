@@ -1,9 +1,41 @@
 /* 
-Amaliyot qilsh. => Apple web site
+Transform,
+Transition.
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+div {
+  transform: translate(500px, 100px);
 }
+
+/* Transform translate bu - elementni x va y o'qlarida siljitadi. */
+
+div {
+  transform: rotate(45deg);
+}
+
+/* Transform rotate bu - elementni 45 daraja aylantiradi. */
+
+div {
+  transform: scale(2);
+}
+
+/* Transform scale bu - elementning o'lchamini 2 baravar kattalashtiradi. */
+
+div {
+  transform: skew(20deg, 10deg);
+}
+
+/* Transform skew bu - elementni 20 daraja gorizontal va 10 daraja vertikal ravishda qiyshaytiradi. */
+
+
+/* Transition */
+
+div {
+  transition: all 2s ease;
+}
+
+/* Transition bu - elementning barcha o'zgarishlarini 2 soniya davomida amalga oshiradi va o'zgarishlarni yumshoq qilib bajaradi. */
+
+
+/* Transition sintaksi - <property> <duration> <timing-function> */
