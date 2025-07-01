@@ -1,9 +1,31 @@
 /* 
-RGB and RBGA,  Hex Color.
+  Flexbox Xossalari
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.flexbox {
+  display: flex;
+  /* Flex konteyner */
+  flex-wrap: wrap;
+  /* Elementlarni qatorlarga bo'lish */
+  justify-content: space-between;
+  /* Elementlarni gorizontal joylash */
+  align-items: center;
+  /* Vertikal joylash */
+  flex-direction: row;
+  /* Elementlarni qator bo'ylab joylash */
+  gap: 10px;
+  /* Elementlar orasidagi bo'shliq */
+  flex-grow: 1;
+  /* Elementning o'sish imkoniyati */
+  flex-shrink: 1;
+  /* Elementning kichrayish imkoniyati */
+  flex-basis: 100px;
+  /* Elementning asosiy o'lchami */
+  background-color: #f0f0f0;
+  /* Fon rangi */
 }
